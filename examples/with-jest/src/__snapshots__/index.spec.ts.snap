@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toMatchSheetSnapshot should be able to use the matcher 1`] = `
+"
+┌───┬───┬───┐
+│ a │ b │ c │
+├───┼───┼───┤
+│ 1 │ 2 │ 3 │
+├───┼───┼───┤
+│ 2 │ 3 │ 1 │
+└───┴───┴───┘
+"
+`;

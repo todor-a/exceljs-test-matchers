@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toHaveSheetHeaders should return error when header is present but shouldn't be 1`] = `[AssertionError: Expected the headers ["a"] not to be present, but all are found.]`;
+
+exports[`toHaveSheetHeaders should return error when header not present 1`] = `[AssertionError: Expected the headers ["q"] to be present, but ["q"] are missing.]`;
+
+exports[`toHaveSheetHeaders should return error when some headers are not present 1`] = `[AssertionError: Expected the headers ["a","q"] to be present, but ["q"] are missing.]`;
+
+exports[`toHaveSheets should return error when sheet missing 1`] = `[AssertionError: Expected the sheets ["sheet-a","sheet-w"] to be present, but ["sheet-w"] are missing.]`;
+
+exports[`toHaveSheets should return error when sheets is present but shouldn't be 1`] = `[AssertionError: Expected the sheets ["sheet-a"] not to be present, but they were found.]`;

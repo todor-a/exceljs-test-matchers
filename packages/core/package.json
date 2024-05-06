@@ -1,0 +1,47 @@
+{
+  "author": "Todor Andonov",
+  "dependencies": {
+    "table": "6.8.2"
+  },
+  "description": "",
+  "devDependencies": {
+    "vitest": "1.5.2"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./build/index.js",
+        "types": "./build/index.d.ts"
+      },
+      "require": {
+        "default": "./build/index.cjs",
+        "types": "./build/index.d.cts"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "build",
+    "src"
+  ],
+  "keywords": [],
+  "license": "ISC",
+  "main": "build/index.cjs",
+  "module": "build/index.js",
+  "name": "@exceljs-test-matchers/core",
+  "scripts": {
+    "build": "pnpm run build:tsup",
+    "build:tsup": "tsup",
+    "clean": "rimraf ./build && rimraf ./coverage",
+    "clean:all": "pnpm run clean && rimraf ./node_modules",
+    "test:cspell": "cspell '**'",
+    "test:eslint": "eslint --ext .ts,.tsx ./src",
+    "test:types": "tsc",
+    "test:unit": "vitest",
+    "test:attw": "attw --pack"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "build/index.d.ts",
+  "version": "1.0.0"
+}

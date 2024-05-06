@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`generates correct table 1`] = `
+"
+┌───┬───┬───┐
+│ a │ b │ c │
+├───┼───┼───┤
+│ 1 │ 2 │ 3 │
+├───┼───┼───┤
+│ 4 │ 5 │ 6 │
+└───┴───┴───┘
+"
+`;

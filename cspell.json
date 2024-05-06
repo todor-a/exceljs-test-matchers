@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "dictionaries": ["softwareTerms"],
+  "ignorePaths": ["node_modules", "build"],
+  "ignoreWords": [
+    "exceljs",
+    "tsup",
+    "todor",
+    "andonov",
+    "knip",
+    "dprint",
+    "attw",
+    "vitest",
+    "arethetypeswrong"
+  ]
+}

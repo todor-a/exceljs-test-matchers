@@ -6,6 +6,8 @@
   },
   "extends": "../../tsconfig.json",
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "vitest.config.ts",
+    "tsup.config.ts",
   ]
 }

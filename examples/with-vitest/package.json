@@ -1,0 +1,21 @@
+{
+  "author": "Todor Andonov",
+  "description": "Examples how to use @exceljs-test-matchers with jest.",
+  "devDependencies": {
+    "@exceljs-test-matchers/core": "workspace:*",
+    "@exceljs-test-matchers/vitest": "workspace:*"
+  },
+  "license": "ISC",
+  "name": "@exceljs-test-matchers/examples-with-vitest",
+  "scripts": {
+    "clean": "rimraf ./build && rimraf ./coverage",
+    "clean:all": "pnpm run clean && rimraf ./node_modules",
+    "test:cspell": "cspell '**'",
+    "test:unit": "vitest",
+    "test:unit:update": "pnpm run test:unit -u"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "vitest": "^1.6.0"
+  }
+}

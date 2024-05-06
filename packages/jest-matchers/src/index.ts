@@ -16,14 +16,14 @@ declare namespace NodeJS {
 
 declare const global: NodeJS.Global;
 
-const jestExpect = global.expect;
+const vitestExpect = global.expect;
 
-if (jestExpect !== undefined) {
-    jestExpect.extend(matchers);
+if (vitestExpect !== undefined) {
+    vitestExpect.extend(matchers);
 } else {
     console.error(
         [
-            "Unable to find Jest's global expect.",
+            "Unable to find vitest's global expect.",
         ].join('\n'),
     );
 }

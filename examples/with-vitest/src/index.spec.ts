@@ -1,4 +1,5 @@
 import { toWorkbook } from '@exceljs-test-matchers/core';
+import { describe, expect, it } from 'vitest';
 
 describe('toMatchSheetSnapshot', () => {
     it('should be able to use the matcher', () => {

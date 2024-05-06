@@ -19,10 +19,3 @@ export const createResult = ({
     message: () => (pass ? notMessage() : message()).trim(),
     pass,
 });
-
-export const createNotWorkbookError = () =>
-    createResult({
-        pass: false,
-        message: () => 'Expected to be an actual workbook.',
-        notMessage: () => 'Expected to be an actual workbook.',
-    });

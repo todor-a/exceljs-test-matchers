@@ -5,7 +5,8 @@
   },
   "description": "",
   "devDependencies": {
-    "vitest": "^1.5.2"
+    "@vitest/expect": "1.6.0",
+    "vitest": "1.5.2"
   },
   "exports": {
     ".": {
@@ -33,9 +34,9 @@
     "build:tsup": "tsup",
     "clean": "rimraf ./build && rimraf ./coverage",
     "clean:all": "pnpm run clean && rimraf ./node_modules",
+    "test:attw": "attw --pack",
     "test:eslint": "eslint --ext .ts,.tsx ./src",
-    "test:types": "tsc",
-    "test:attw": "attw --pack"
+    "test:types": "tsc"
   },
   "sideEffects": false,
   "type": "module",

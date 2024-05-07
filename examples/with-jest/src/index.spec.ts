@@ -72,7 +72,9 @@ describe('toHaveSheetHeaders', () => {
         try {
             expect(ws).toHaveSheetHeaders(['w']);
         } catch (error) {
-            expect(error).toMatchInlineSnapshot(`[Error: Expected the sheet headers ["w"] to be present, but ["w"] are missing.]`);
+            expect(error).toMatchInlineSnapshot(
+                `[Error: Expected the sheet headers ["w"] to be present, but ["w"] are missing.]`,
+            );
         }
     });
 
@@ -81,7 +83,9 @@ describe('toHaveSheetHeaders', () => {
         try {
             expect(ws).not.toHaveSheetHeaders(['a']);
         } catch (error) {
-            expect(error).toMatchInlineSnapshot(`[Error: Expected the sheet headers ["a"] not to be present, but they were found.]`);
+            expect(error).toMatchInlineSnapshot(
+                `[Error: Expected the sheet headers ["a"] not to be present, but they were found.]`,
+            );
         }
     });
 });

@@ -28,8 +28,8 @@
   "scripts": {
     "build": "pnpm run build:tsup",
     "build:tsup": "tsup",
-    "clean": "rimraf ./build && rimraf ./coverage",
-    "clean:all": "pnpm run clean && rimraf ./node_modules",
+    "clean": "rm -rf ./build && rm -rf ./coverage",
+    "clean:all": "pnpm run clean && rm -rf ./node_modules",
     "test:eslint": "eslint --ext .ts,.tsx ./src",
     "test:types": "tsc",
     "test:attw": "attw --pack"

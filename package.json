@@ -23,7 +23,7 @@
     "build": "nx affected --target=build",
     "build:all": "nx run-many --target=build",
     "clean": "pnpm --filter \"./packages/**\" run clean",
-    "clean:all": "pnpm --filter \"./packages/**\" run clean:all",
+    "clean:all": "rm -rf node_modules && pnpm --filter \"./packages/**\" run clean:all",
     "dev": "pnpm run watch",
     "install:csb": "corepack enable && pnpm install --frozen-lockfile",
     "release": "pnpm build:all && changeset publish",

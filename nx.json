@@ -5,5 +5,10 @@
   "nxCloudAccessToken": "Mzg4NjJlNzgtYTM4Zi00N2ZhLWIwMGItYmVkMmY2ODdjYmJkfHJlYWQtd3JpdGU=",
   "release": {
     "projects": ["packages/chai-matchers", "packages/jest-matchers"]
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build", "prebuild"]
+    }
   }
 }

@@ -25,7 +25,6 @@
     "clean": "pnpm --filter \"./packages/**\" run clean",
     "clean:all": "pnpm --filter \"./packages/**\" run clean:all",
     "dev": "pnpm run watch",
-    "format": "pnpm run format:dprint && pnpm run format:sort-json",
     "install:csb": "corepack enable && pnpm install --frozen-lockfile",
     "release": "pnpm build:all && changeset publish",
     "test": "pnpm run test:ci",

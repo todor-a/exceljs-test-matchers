@@ -1,6 +1,9 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "defaultBase": "master",
+  "defaultBase": "main",
   "extends": "nx/presets/npm.json",
-  "nxCloudAccessToken": "MzBjYzgwMmQtNTU2Yy00YTBlLTkxMDEtMmNkNDllNDAyOTlifHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "Mzg4NjJlNzgtYTM4Zi00N2ZhLWIwMGItYmVkMmY2ODdjYmJkfHJlYWQtd3JpdGU=",
+  "release": {
+    "projects": ["packages/chai-matchers", "packages/jest-matchers"]
+  }
 }

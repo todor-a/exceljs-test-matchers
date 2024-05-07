@@ -8,7 +8,10 @@
   },
   "targetDefaults": {
     "build:all": {
-      "dependsOn": ["^build:all", "prebuild"]
+      "dependsOn": ["^build:all"]
+    },
+    "build": {
+      "dependsOn": ["^build"]
     }
   }
 }

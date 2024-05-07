@@ -17,6 +17,7 @@
   "license": "MIT",
   "name": "exceljs-test-matchers",
   "namespace": "@exceljs-test-matchers",
+  "packageManager": "pnpm@9.0.5",
   "private": true,
   "scripts": {
     "build": "nx affected --target=build",

@@ -7,8 +7,8 @@
     "projects": ["packages/chai-matchers", "packages/jest-matchers"]
   },
   "targetDefaults": {
-    "build": {
-      "dependsOn": ["^build", "prebuild"]
+    "build:all": {
+      "dependsOn": ["^build:all", "prebuild"]
     }
   }
 }

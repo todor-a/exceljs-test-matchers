@@ -17,5 +17,5 @@
     "test:unit": "jest",
     "test:unit:update": "pnpm run test:unit -u"
   },
-  "version": "1.0.0"
+  "version": "0.0.0"
 }

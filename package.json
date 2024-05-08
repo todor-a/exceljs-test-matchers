@@ -1,12 +1,12 @@
 {
   "dependencies": {
+    "@changesets/cli": "^2.27.1",
     "tsup": "8.0.2"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.15.3",
-    "@nx/js": "18.3.3",
-    "@types/node": "^20.12.8",
-    "cspell": "^8.8.0",
+    "@arethetypeswrong/cli": "0.15.3",
+    "@types/node": "20.12.8",
+    "cspell": "8.8.0",
     "dprint": "0.45.1",
     "exceljs": "4.4.0",
     "knip": "5.11.0",
@@ -17,16 +17,16 @@
   "license": "MIT",
   "name": "exceljs-test-matchers",
   "namespace": "@exceljs-test-matchers",
+  "packageManager": "pnpm@9.0.3",
   "private": true,
   "scripts": {
     "build": "nx affected --target=build",
     "build:all": "nx run-many --target=build",
-    "cipublish": "node scripts/publish.js",
     "clean": "pnpm --filter \"./packages/**\" run clean",
-    "clean:all": "pnpm --filter \"./packages/**\" run clean:all",
+    "clean:all": "rm -rf node_modules && pnpm --filter \"./packages/**\" run clean:all",
     "dev": "pnpm run watch",
-    "format": "pnpm run format:dprint && pnpm run format:sort-json",
     "install:csb": "corepack enable && pnpm install --frozen-lockfile",
+    "release": "pnpm build:all && changeset publish",
     "test": "pnpm run test:ci",
     "test:attw": "nx affected --target=test:attw",
     "test:build": "nx affected --target=test:build",

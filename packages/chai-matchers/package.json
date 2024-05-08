@@ -4,6 +4,9 @@
     "@exceljs-test-matchers/core": "workspace:*"
   },
   "description": "",
+  "devDependencies": {
+    "@types/chai": "4.3.16"
+  },
   "exports": {
     ".": {
       "import": {
@@ -28,14 +31,14 @@
   "scripts": {
     "build": "pnpm run build:tsup",
     "build:tsup": "tsup",
-    "clean": "rimraf ./build && rimraf ./coverage",
-    "clean:all": "pnpm run clean && rimraf ./node_modules",
+    "clean": "rm -rf ./build && rm -rf ./coverage",
+    "clean:all": "pnpm run clean && rm -rf ./node_modules",
+    "test:attw": "attw --pack",
     "test:eslint": "eslint --ext .ts,.tsx ./src",
-    "test:types": "tsc",
-    "test:attw": "attw --pack"
+    "test:types": "tsc"
   },
   "sideEffects": false,
   "type": "module",
   "types": "build/index.d.ts",
-  "version": "1.0.0"
+  "version": "0.1.0"
 }

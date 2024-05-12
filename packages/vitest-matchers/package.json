@@ -5,7 +5,8 @@
   },
   "description": "",
   "devDependencies": {
-    "vitest": "^1.5.2"
+    "@vitest/expect": "1.6.0",
+    "vitest": "1.5.2"
   },
   "exports": {
     ".": {

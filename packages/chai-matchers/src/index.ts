@@ -7,12 +7,14 @@ declare global {
         interface SheetComparison {
             /**
              * Asserts that the target workbook has sheets with the given names.
+             * * @param actual a valid workbook
              * @param expectedSheetsNames the expected sheet names
              */
             toHaveSheets: (expectedSheetsNames: string | string[]) => Assertion;
 
             /**
              * Asserts that a worksheet contains the expected headers.
+             * @param actual a valid worksheet
              * @param expectedSheetHeaders
              * @param options
              */

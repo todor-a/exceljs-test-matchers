@@ -6,7 +6,7 @@
   "description": "",
   "devDependencies": {
     "@vitest/expect": "1.6.0",
-    "vitest": "1.5.2"
+    "vitest": "1.6.0"
   },
   "exports": {
     ".": {
@@ -26,8 +26,8 @@
   ],
   "keywords": [],
   "license": "ISC",
-  "main": "build/index.cjs",
-  "module": "build/index.js",
+  "main": "./build/index.cjs",
+  "module": "./build/index.js",
   "name": "@exceljs-test-matchers/vitest",
   "scripts": {
     "build": "pnpm run build:tsup",
@@ -36,10 +36,10 @@
     "clean:all": "pnpm run clean && rm -rf ./node_modules",
     "test:attw": "attw --pack",
     "test:eslint": "eslint --ext .ts,.tsx ./src",
-    "test:types": "tsc"
+    "test:types": "tsc",
+    "test:unit": "vitest"
   },
-  "sideEffects": false,
   "type": "module",
-  "types": "build/index.d.ts",
+  "types": "./build/index.d.ts",
   "version": "0.0.0"
 }

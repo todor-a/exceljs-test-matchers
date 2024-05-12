@@ -15,3 +15,4 @@
 The setup of this project is _heavily_ influenced by the following projects:
 - [TanStack Query](https://github.com/TanStack/query)
 - [jest-type-matchers](https://github.com/lukemorales/jest-type-matchers)
+- [cdktf-vitest](https://github.com/duniul/cdktf-vitest)

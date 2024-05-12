@@ -1,30 +1,13 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "checkJs": true,
-    "declaration": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "lib": [
-      "ES2022",
-      "DOM"
-    ],
-    "module": "ES2022",
-    "moduleResolution": "Bundler",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
+    "module": "NodeNext",
     "strict": true,
-    "target": "ES2020"
+    "target": "ES2022"
   },
-  "include": ["src", "vitest.*.ts"]
+  "include": [
+    "src",
+    "vitest.*.ts",
+    "setupTests.ts"  
+]
 }

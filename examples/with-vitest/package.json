@@ -1,12 +1,22 @@
 {
-  "name": "with-vitest",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Todor Andonov",
+  "description": "Examples how to use @exceljs-test-matchers with vitest.",
+  "devDependencies": {
+    "@exceljs-test-matchers/core": "workspace:*",
+    "@exceljs-test-matchers/vitest": "workspace:*"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "name": "@exceljs-test-matchers/examples-with-vitest",
+  "scripts": {
+    "clean": "rimraf ./build && rimraf ./coverage",
+    "clean:all": "pnpm run clean && rimraf ./node_modules",
+    "test:cspell": "cspell '**'",
+    "test:unit": "vitest",
+    "test:unit:update": "pnpm run test:unit -u"
+  },
+  "type": "module",
+  "version": "1.0.0",
+  "dependencies": {
+    "vitest": "1.6.0"
+  }
 }

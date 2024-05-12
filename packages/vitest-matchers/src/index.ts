@@ -1,15 +1,16 @@
-import { expect } from 'vitest';
-import * as matchers from './matchers';
+import type { ExcelJsCustomMatchers } from './matchers';
 
-interface CustomMatchers<R = unknown> {
-    toHaveSheets(expected: string[]): R;
+export { setupExcelJsCustomMatchers } from './matchers';
+export type { ExcelJsCustomMatchers } from './matchers';
+
+declare module '@vitest/expect' {
+    interface Assertion<T = any> extends ExcelJsCustomMatchers<T> {}
+    interface AsymmetricMatchersContaining extends ExcelJsCustomMatchers {}
 }
 
-declare module 'vitest' {
-    interface Assertion<T> extends CustomMatchers<T> {}
-    interface AsymmetricMatchersContaining extends CustomMatchers {}
+declare global {
+    namespace Vi {
+        interface Assertion<T> extends ExcelJsCustomMatchers<T> {
+        }
+    }
 }
-
-export default () => {
-    expect.extend(matchers);
-};

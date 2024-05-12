@@ -4,7 +4,7 @@
   "extends": "nx/presets/npm.json",
   "nxCloudAccessToken": "Mzg4NjJlNzgtYTM4Zi00N2ZhLWIwMGItYmVkMmY2ODdjYmJkfHJlYWQtd3JpdGU=",
   "release": {
-    "projects": ["packages/chai-matchers", "packages/jest-matchers"]
+    "projects": ["packages/chai-matchers", "packages/jest-matchers", "packages/vitest-matchers"]
   },
   "targetDefaults": {
     "build:all": {
